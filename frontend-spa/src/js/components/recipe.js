@@ -1,8 +1,8 @@
-export default function recipe(recipe){
+export default function FoodType(foodType){
     return `
         <h1>${recipe.name}</h1>
         <ol>
-            ${recipe.foodTypes.map(recipe =>{
+            ${fodType.recipes.map(recipe =>{
                 return `
                 <li>
                     <h4>Recipe Name: ${recipe.name}</h4>
