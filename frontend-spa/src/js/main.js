@@ -1,5 +1,5 @@
 import Header from './components/Header';
-import Home from './components/Home';
+//import Home from './components/Home';
 import apiActions from './api/apiActions';
 import Recipes from './components/Recipes';
 import FoodType from './components/FoodType';
@@ -14,13 +14,12 @@ const appDiv = document.querySelector('.app')
 
 export default function pageBuild() {
     header();
-    Home();
+   // home();
     navHome();
     navFoodTypes();
     navRecipes();
     footer();
     showFoodTypes();
-    showRecipes();
 
 }
 function header() {
@@ -49,6 +48,10 @@ function footer() {
     const footerElement = document.querySelector('.footer');
     footerElement.innerHTML = Footer();
 }
+
+// function home() {
+//     fetch("https://localhost:44307/api/home")
+// }
 
 function showRecipes() {
     fetch("https://localhost:44307/api/recipe")

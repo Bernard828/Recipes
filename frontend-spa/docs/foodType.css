@@ -1,0 +1,16 @@
+/* .foodTypeimage{
+    max-width: 20%;
+    max-height: 30%;
+} */
+
+#recipes{
+    display: flex;
+    flex-direction: row;
+    grid-row: 2 3 2 4;
+}
+
+.foodtype__list{
+    display: flex;
+    flex-direction: row;
+    grid-template-rows: repeat(5 1fr);
+}
