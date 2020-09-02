@@ -2,11 +2,14 @@
     max-width: 20%;
     max-height: 30%;
 } */
+/* .foodTypeImage{
+    width: 80%;
+    height: 20%;
+} */
 
 #recipes{
-    display: flex;
-    flex-direction: row;
-    grid-row: 2 3 2 4;
+    display: grid;
+    grid
 }
 
 .foodtype__list{
