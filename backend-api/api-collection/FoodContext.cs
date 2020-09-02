@@ -24,9 +24,10 @@ namespace api_collection
         protected override void OnModelCreating(ModelBuilder modelbuilder)
         {
             modelbuilder.Entity<FoodType>().HasData(
-                new FoodType(1, "Vegetarian", "veggies.jpg"),
+                new FoodType(1, "Vegetarian", "vegetables.jpg"),
                 new FoodType(2, "Chicken", "chicken.jpg"),
-                new FoodType(3, "Beef", "beef.jpg")
+                new FoodType(3, "Beef", "skirtsteak.jpg"),
+                new FoodType(4, "Pork", "pork.jpg")
                 );
             modelbuilder.Entity<Recipe>().HasData(
                 new Recipe(2, "Matar Paneer", "matarPaneer.jpg", "Cottage Cheese Cubes, Curry Sauce, Peas", "20 minutes", 1),
@@ -37,7 +38,11 @@ namespace api_collection
                 new Recipe(7, "Fried Chicken", "friedChicken.jpg", "Chicken, Grease, Flour, Cayenne Pepper, Salt, Pepper, Butter Milk", "35 minutes", 2),
                 new Recipe(8, "Angus Burger", "angusBurger.jpg", "Angus Beef, Bacon, Mayo, Ketchup, Lettuce, Tomato, Sesame Seed Bun", "17 minutes", 3),
                 new Recipe(9, "Steak", "steak.jpg", "USDA Prime Beef", "20 minutes", 3),
-                new Recipe(10, "Pot Roast", "potRoast.jpg", "Beef, Carrots, Celery, Potatos, Bay Leaf, Rosemary, Salt, Pepper, Beef Stock, Flour", "45 minutes", 3)
+                new Recipe(10, "Pot Roast", "potRoast.jpg", "Beef, Carrots, Celery, Potatos, Bay Leaf, Rosemary, Salt, Pepper, Beef Stock, Flour", "45 minutes", 3),
+                new Recipe(11, "Pork Tenderloin", "pork.jpg", "Juicy pork tenderloin.", "20 minutes", 4),
+                new Recipe(12, "Chicken, Kale & Chorizo Soup", "kalesoup.jpg", "Summertime, winter warmth, simply a light dish", "38 minutes", 4),
+                new Recipe(13, "Chicken, Kale & Chorizo Soup", "kalesoup.jpg", "A hearty soup I know the family will enjoy", "38 minutes", 2),
+                new Recipe(14, "Skirt Steak Au Jus", "skirtsteak.jpg", "Juicy, tender beef in every bite", "25 minutes", 3)
                 );
         }
     }

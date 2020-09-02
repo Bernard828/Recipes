@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using api_collection;
 
 namespace api_collection.Migrations
 {
     [DbContext(typeof(FoodContext))]
-    partial class FoodContextModelSnapshot : ModelSnapshot
+    [Migration("20200901203144_ImageNameChange")]
+    partial class ImageNameChange
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -52,13 +54,7 @@ namespace api_collection.Migrations
                         {
                             Id = 3,
                             FoodCategory = "Beef",
-                            FoodImage = "skirtsteak.jpg"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            FoodCategory = "Pork",
-                            FoodImage = "pork.jpg"
+                            FoodImage = "brisket.jpg"
                         });
                 });
 
@@ -171,42 +167,6 @@ namespace api_collection.Migrations
                             Ingredients = "Beef, Carrots, Celery, Potatos, Bay Leaf, Rosemary, Salt, Pepper, Beef Stock, Flour",
                             RecipeImage = "potRoast.jpg",
                             RecipeName = "Pot Roast"
-                        },
-                        new
-                        {
-                            RecipeId = 11,
-                            CookTime = "20 minutes",
-                            FoodTypeId = 4,
-                            Ingredients = "Juicy pork tenderloin.",
-                            RecipeImage = "pork.jpg",
-                            RecipeName = "Pork Tenderloin"
-                        },
-                        new
-                        {
-                            RecipeId = 12,
-                            CookTime = "38 minutes",
-                            FoodTypeId = 4,
-                            Ingredients = "Summertime, winter warmth, simply a light dish",
-                            RecipeImage = "kalesoup.jpg",
-                            RecipeName = "Chicken, Kale & Chorizo Soup"
-                        },
-                        new
-                        {
-                            RecipeId = 13,
-                            CookTime = "38 minutes",
-                            FoodTypeId = 2,
-                            Ingredients = "A hearty soup I know the family will enjoy",
-                            RecipeImage = "kalesoup.jpg",
-                            RecipeName = "Chicken, Kale & Chorizo Soup"
-                        },
-                        new
-                        {
-                            RecipeId = 14,
-                            CookTime = "25 minutes",
-                            FoodTypeId = 3,
-                            Ingredients = "Juicy, tender beef in every bite",
-                            RecipeImage = "skirtsteak.jpg",
-                            RecipeName = "Skirt Steak Au Jus"
                         });
                 });
 

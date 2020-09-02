@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using api_collection;
 
 namespace api_collection.Migrations
 {
     [DbContext(typeof(FoodContext))]
-    partial class FoodContextModelSnapshot : ModelSnapshot
+    [Migration("20200902020259_PorkCategory")]
+    partial class PorkCategory
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -177,8 +179,8 @@ namespace api_collection.Migrations
                             RecipeId = 11,
                             CookTime = "20 minutes",
                             FoodTypeId = 4,
-                            Ingredients = "Juicy pork tenderloin.",
-                            RecipeImage = "pork.jpg",
+                            Ingredients = "USDA Prime Beef",
+                            RecipeImage = "steak.jpg",
                             RecipeName = "Pork Tenderloin"
                         },
                         new
@@ -194,7 +196,7 @@ namespace api_collection.Migrations
                         {
                             RecipeId = 13,
                             CookTime = "38 minutes",
-                            FoodTypeId = 2,
+                            FoodTypeId = 4,
                             Ingredients = "A hearty soup I know the family will enjoy",
                             RecipeImage = "kalesoup.jpg",
                             RecipeName = "Chicken, Kale & Chorizo Soup"
