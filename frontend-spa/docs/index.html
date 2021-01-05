@@ -14,13 +14,14 @@
     <footer class="footer"></footer>
     <script src="main.js"></script>
     <button onclick="topFunction()" id="myTopBtn" title="Go to Page Top">Back to Top</button>
-    <script>
+      <script>
         var mybutton = document.getElementById("myTopBtn");
         window.onscroll = function() {scrollFunction()};
         function scrollFunction() {
           if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             mybutton.style.display = "block";
-          } else {
+          } 
+          else {
             mybutton.style.display = "none";
           }
         }
@@ -28,6 +29,6 @@
           document.body.scrollTop = 0;
           document.documentElement.scrollTop = 0;
         }
-        </script>
+    </script>
 </body>
 </html>

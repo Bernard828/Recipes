@@ -1,13 +1,13 @@
 import Header from './components/Header';
-//import Home from './components/Home';
+import Footer from './components/footer';
 import apiActions from './api/apiActions';
-import Recipes from './components/Recipes';
+//import Home from './components/Home';
 import FoodType from './components/FoodType';
 import FoodTypes from './components/FoodTypes';
+import Recipes from './components/Recipes';
+import Recipe from './components/Recipe';
 import RecipePostSection from './components/RecipePostSection';
 import RecipeEdit from './components/RecipeEdit';
-import Footer from './components/footer';
-import Recipe from './components/Recipe';
 import recipe from './components/Recipe';
 
 const appDiv = document.querySelector('.app')
